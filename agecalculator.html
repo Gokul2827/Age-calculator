@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+</head>
+<body>
+    <div><input id="name" type="name" placeholder="your name"></div>
+    <div><input id="year" type="number" placeholder="your birth year"></div>
+    <button id="btn">calculate</button>
+    <div id="age"></div>
+    <script>
+        
+        let btn=document.getElementById("btn")
+        btn.addEventListener('click',()=>{
+         let name=document.getElementById("name").value
+        let year=document.getElementById("year").value
+        let a
+        let age=document.getElementById("age")
+             a=  new Date().getFullYear()-year
+             return age.innerText=`${name} age is ${a}`
+        })
+    </script>
+</body>
+</html>
